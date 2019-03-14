@@ -30,9 +30,6 @@ get_models_with_tags<-function(type=NA) {
     model<-models[[i]]
     ans[i, (unique_tags):=as.list(unique_tags %in% source[[model]]$tags)]
   }
-  function(model) {
-    unique_tags %in% source[[model]]$tags
-  }
   return(ans)
 }
 
@@ -100,9 +97,3 @@ what_packages_are_missing<-function(models_to_test) {
   return(names(which(db)))
 }
 
-# models_to_test<-get_all_caret_models(type='Classification')
-# models_to_try<-which_models_are_ready_to_be_used(models_to_test)
-# libs<-which_packages_are_missing(models_to_test)
-#
-# install.packages(libs)
-# summary(get_models_with_tags(type='Classification'))
