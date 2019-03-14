@@ -21,9 +21,9 @@ load <- function() {
 #Notes:
 #loan and housing can be
 
-dt<-load()
-dv_name<-'y'
-iv_names<-setdiff(colnames(dt), 'y')
+#dt<-load()
+#dv_name<-'y'
+#iv_names<-setdiff(colnames(dt), 'y')
 
 
 calc_models<-function(model_names, dt, dv_name, iv_names, path_prefix='models/', adaptive=NA, assume_calculated=FALSE) {
