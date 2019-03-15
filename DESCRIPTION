@@ -1,11 +1,22 @@
 Package: flix
 Type: Package
-Title: What the Package Does (Title Case)
+Title: One-stop regression using caret
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Adam Ryczkowski
+Maintainer: Adam Ryczkowski <adam@statystyka.net>
+Description: Uses caret to perform as many, as possible data regressions. Also prepares the data.
+License: GPL
 Encoding: UTF-8
 LazyData: true
+Imports:
+  plyr,
+  doMC,
+  caret,
+  dplyr,
+  mice
+Depends:
+  data.table,
+  danesurowe,
+Remotes: 
+  adamryczkowski/danesurowe,
+RoxygenNote: 6.0.1
