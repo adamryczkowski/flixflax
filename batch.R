@@ -20,22 +20,23 @@ models_to_try <-
     "nbSearch", "nnet", "nodeHarvest", "null", "OneR", "ordinalNet",
     "ordinalRF", "ORFlog", "ORFpls", "ORFridge", "ORFsvm", "ownn",
     "pam", "parRF", "PART", "partDSA", "pcaNNet", "pda", "pda2",
-    "PenalizedLDA", "plr", "pls", "plsRglm", "polr", "protoclass",
-    "qda", "QdaCov", "randomGLM", "ranger", "rbf", "rbfDDA", "Rborist",
-    "rda", "regLogistic", "rf", "rFerns", "RFlda", "rfRules", "rmda",
-    "rocc", "rotationForest", "rotationForestCp", "rpart", "rpart1SE",
-    "rpart2", "rpartCost", "rpartScore", "RRF", "RRFglobal", "rrlda",
-    "RSimca", "sda", "sdwd", "simpls", "SLAVE", "slda", "smda", "snn",
-    "sparseLDA", "spls", "stepLDA", "stepQDA", "svmBoundrangeString",
-    "svmExpoString", "svmLinear", "svmLinear2", "svmLinear3", "svmLinearWeights",
+    "PenalizedLDA", "plr", "pls", "polr", "protoclass", "qda", "QdaCov",
+    "randomGLM", "ranger", "rbf", "rbfDDA", "Rborist", "rda", "regLogistic",
+    "rf", "rFerns", "RFlda", "rfRules", "rmda", "rocc", "rotationForest",
+    "rotationForestCp", "rpart", "rpart1SE", "rpart2", "rpartCost",
+    "rpartScore", "RRF", "RRFglobal", "rrlda", "RSimca", "sda", "sdwd",
+    "simpls", "SLAVE", "slda", "smda", "snn", "sparseLDA", "spls",
+    "stepLDA", "stepQDA", "svmBoundrangeString", "svmExpoString",
+    "svmLinear", "svmLinear2", "svmLinear3", "svmLinearWeights",
     "svmLinearWeights2", "svmPoly", "svmRadial", "svmRadialCost",
     "svmRadialSigma", "svmRadialWeights", "svmSpectrumString", "tan",
     "tanSearch", "treebag", "vglmAdjCat", "vglmContRatio", "vglmCumulative",
     "widekernelpls", "wsrf", "xgbDART", "xgbLinear", "xgbTree", "xyf"
   )
+
+library(plyr)
 library(flix)
 library(data.table)
-library(plyr)
 library(dplyr)
 library(caret)
 

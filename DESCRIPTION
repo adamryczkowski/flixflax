@@ -13,7 +13,8 @@ Imports:
   doMC,
   caret,
   dplyr,
-  mice
+  mice,
+  BradleyTerry2
 Depends:
   data.table,
   danesurowe,
